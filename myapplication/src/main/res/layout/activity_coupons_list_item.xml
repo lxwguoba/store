@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+         android:paddingBottom="10dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/coupons_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="ID：15"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/coupons_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:text="名称：锅巴来也"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="类型："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/coupons_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="折扣卷"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="折扣："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/coupons_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="1折"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="所需消费金额："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/coupons_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="100.00￥"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="面值："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/coupons_mz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="150￥"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="剩余数量："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/coupons_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="10000"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="有效期至："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="2018-11-30"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="使用限制："
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/coupons_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="满150.00元使用"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+
+                />
+
+              <Button
+                  android:id="@+id/edit_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="编辑"
+                  android:layout_marginRight="15dp"
+                  android:textSize="14sp"
+                  android:textColor="#000000"
+                  />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

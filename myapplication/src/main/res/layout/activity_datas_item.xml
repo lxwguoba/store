@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            >
+            <zerone.myapplication.view.CircleImageView
+                android:id="@+id/userhead"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/bg1"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:text="锅巴向您支付了100元"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/userlogintime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="2018-10-30 10:51:51"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+     <View
+         android:id="@+id/lines"
+         android:layout_width="match_parent"
+         android:background="#f4f4f4"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_height="2dp"/>
+</LinearLayout>

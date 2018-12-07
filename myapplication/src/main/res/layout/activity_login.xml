@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--安全密码设置(未设置or已设置)-->
+
+    <zerone.myapplication.view.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/login_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="EBOSS商家管理系统"
+        android:textSize="22sp"
+        android:textColor="#989898"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/newnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="用户名"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="10001"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/newnametext"
+        app:layout_constraintLeft_toRightOf="@+id/newnametext" />
+    <TextView
+        android:id="@+id/rpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="密码："
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/newnametext"
+        app:layout_constraintTop_toBottomOf="@+id/newnametext" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:text="admin"
+        app:layout_constraintBottom_toBottomOf="@+id/rpwd"
+        app:layout_constraintLeft_toLeftOf="@+id/user_name" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/guoba"
+        android:onClick="onGotoMain"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpwd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="changePassWord"
+        android:text="忘记密码？"
+        android:textColor="#09bb07"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="addMerchants"
+        android:text="商家入驻"
+        android:textColor="#09bb07"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+    <RelativeLayout
+        android:layout_height="80dp"
+        android:layout_width="423dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零壹新科技(深圳)有限公司 版权所有"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2017-2020 Zerone，All rights reserved."
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:layout_below="@id/companyname"
+            android:textColor="#666666"
+            />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

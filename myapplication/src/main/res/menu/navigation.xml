@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_data_statistics"
+            android:icon="@mipmap/icon_data"
+            android:title="数据统计" />
+        <item
+            android:icon="@mipmap/icon_account"
+            android:id="@+id/nav_manage_account"
+            android:title="账号管理" />
+        <item
+            android:icon="@mipmap/icon_mannaerlog"
+            android:id="@+id/nav_manage_log"
+            android:title="日志管理" />
+    </group>
+
+</menu>

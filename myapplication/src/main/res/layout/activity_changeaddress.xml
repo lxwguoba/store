@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activitytitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:onClick="onAreaSelected">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="地区选择"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_arr_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showPositionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/showaddrss"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="福建省龙岩市长汀县濯田镇"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="详细地址"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addressDetails"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:hint="输入详细地址"
+            android:inputType="text"
+            android:lines="2"
+            android:paddingLeft="15dp"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/btn_selector"
+        android:onClick="onSaveChangeAddress"
+        android:text="修改地址"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

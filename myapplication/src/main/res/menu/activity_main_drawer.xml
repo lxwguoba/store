@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_manage_product"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="商品管理" />
+        <item
+            android:id="@+id/nav_manage_pay"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="财务管理" />
+
+
+        <item
+            android:id="@+id/nav_manage_vip"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="消费者管理" />
+
+        <item
+            android:id="@+id/nav_manage_attention"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="动态管理" />
+
+        <item
+            android:id="@+id/nav_manage_yxgj"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="营销工具" />
+        <item
+            android:id="@+id/nav_manager_system"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="商家资料编辑" />
+    </group>
+    <item android:title="其他操作">
+        <menu>
+            <item
+                android:id="@+id/nav_about_me"
+                android:icon="@mipmap/icon_about_me"
+                android:title="关于我们" />
+
+            <item
+                android:id="@+id/nav_out_system"
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出登录" />
+        </menu>
+    </item>
+
+</menu>

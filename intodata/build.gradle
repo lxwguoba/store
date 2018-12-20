@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.zerone.intodata"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            //是否优化zip
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            //启用代码混淆
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:27.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:27.+'
+    compile 'com.google.code.gson:gson:2.7'
+    //图片选择框架
+    compile 'com.github.open-android:ImageSelector:0.1.0'
+    //地区选择的框架
+    compile 'com.contrarywind:Android-PickerView:4.1.6'
+    //下拉刷新和上拉加载
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-6'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-15'
+    compile 'com.zyao89:zloading:1.1.2'
+    testCompile 'junit:junit:4.12'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.githang:status-bar-compat:latest.integration'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/fastjson-1.2.8.jar')
+//    compile 'com.android.volley:volley:1.0.0'
+    compile files('libs/Volley.jar')
+}

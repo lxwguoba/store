@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zerone.intodata.view.BarProgress
+        android:id="@+id/pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="15dp"
+        app:bga_pb_isCapRounded="false"
+        app:bga_pb_isHiddenText="true"
+        app:bga_pb_mode="horizontal"
+        app:bga_pb_reachedColor="#FFC73B"
+        app:bga_pb_reachedHeight="4dp"
+        app:bga_pb_textColor="#FFC73B"
+        app:bga_pb_textMargin="8dp"
+        app:bga_pb_textSize="14sp"
+        app:bga_pb_unReachedColor="#ECF0F1"
+        app:bga_pb_unReachedHeight="4dp" />
+
+    <TextView
+        android:id="@+id/bfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="上传进度"
+        android:textSize="20sp" />
+
+</LinearLayout>

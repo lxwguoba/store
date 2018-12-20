@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4"
+        />
+    <RadioGroup
+        android:id="@+id/select_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/select_into_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/color_radiobutton"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_jj_radio"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:text="新增进件" />
+
+        <RadioButton
+            android:id="@+id/select_into_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:textColor="@drawable/color_radiobutton"
+            android:drawableTop="@drawable/btn_filelist_radio"
+            android:gravity="center"
+            android:text="进件列表" />
+    </RadioGroup>
+
+
+</LinearLayout>
